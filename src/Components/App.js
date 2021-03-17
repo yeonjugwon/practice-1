@@ -1,11 +1,14 @@
-import { render } from "@testing-library/react";
 import React, { Component } from "react";
-import Router from "../Components/Router";
+import Router from "Components/Router";
+import GlobalStyled from "./GlobalStyled";
 
-class App extends Component{
-  render(){
-    return <><Router /></>;
-  }
+function App() {
+  return (
+    <>
+      <Router />
+      <GlobalStyled />
+    </>
+  );
 }
 
 export default App;
